@@ -1,0 +1,28 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.tableFixHead    { overflow-y: auto; height: 750px; }
+.tableFixHead th { position: sticky; top: 0; }
+
+table  { border-collapse: collapse; width: 100%; }
+th, td { padding: 8px 16px; }
+th     { background:#eee; }
+
+body, html{
+    height: 100%;
+}
+
+.bg{
+    /*background-image: url('https://images-cdn.9gag.com/photo/a6yONdR_700b.jpg');*/
+    background-image: url('http://img10.deviantart.net/2376/i/2012/271/5/c/spaceman_spiff_by_jscampbell43-d5g7oty.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60%;
+    padding: 60px;
+}
+
+h2{
+    color: #ffffff;
+}
