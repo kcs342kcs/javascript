@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>UFO Sightings</title>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div class='bg jumbotron'>
+  <h2 class='display-4'><strong>UFO Sightings</strong></h2>
+</div>
+ <div class='container'>
+   <div class='row'>
+   <form>
+    <div class='col-lg-2'>
+     <h3>Filters</h3>
+     <div class='form-group'>
+       <label for='datef'>Date/Time</label></br>
+       <select id='dateMenu' onchange='dateFilterSet()'>Date/Time</select></br>
+       <label for='cityf'>City</label></br>
+       <select id='cityMenu' onchange='cityFilterSet()'>City</select></br>
+       <label for='statef'>State</label></br>
+       <select id='stateMenu' onchange='stateFilterSet()'>State</select></br>
+       <label for='countryf'>Country</label></br>
+       <select id='countryMenu' onchange='countryFilterSet()'>Country</select></br>
+       <label for='shape'>Shape</label></br>
+       <select id='shapeMenu' onchange='shapeFilterSet()'>Shape</select></br>
+    </div>
+     <button id="applySubmit" type='button' class="btn btn-default">Apply</button>
+     <button id="resetSubmit" type='submit' class="btn btn-default">Reset</button>
+    </div>
+    </form>
+    <div class='col-lg-10'>
+     <div class='tableFixHead'>
+      <table class='table responsive-table'>
+        <thead>
+          <tr>
+            <th>Date/Time</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Country</th>
+            <th>Shape</th>
+            <th>Duration(Minutes)</th>
+            <th>Comments</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      </div><!--end table fix-->
+     </div><!--end col-->
+    </div><!--end row-->
+  </div><!--end container-->
+  <!--</div>end bg-->
+</body>
+<script src="static/js/data.js"></script>
+<script src="static/js/first.js"></script>
+
+</html>
